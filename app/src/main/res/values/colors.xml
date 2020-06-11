@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#09D6FF</color>
+    <color name="colorPrimaryDark">#2E2F36</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#fff</color>
+    <color name="darkGrey">#2E2F36</color>
+    <color name="blueTeal">#13A9E9</color>
+    <color name="buttonColor">#12AD9A</color>
+    <color name="emeraGreen">#25D690</color>
+
+
+
+
+</resources>

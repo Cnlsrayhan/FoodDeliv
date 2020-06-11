@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "544240264937",
+    "firebase_url": "https://fooddeliv-5d71e.firebaseio.com",
+    "project_id": "fooddeliv-5d71e",
+    "storage_bucket": "fooddeliv-5d71e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544240264937:android:305f65c20507cbee313278",
+        "android_client_info": {
+          "package_name": "com.example.fooddeliv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544240264937-bdb2o127ivmb00jd7sr1groeb5p2vrkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYutMa0AdT9O4mtPH2An6ibMs_7f1zgwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544240264937-bdb2o127ivmb00jd7sr1groeb5p2vrkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
