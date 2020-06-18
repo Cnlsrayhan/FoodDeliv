@@ -1,5 +1,6 @@
 package com.example.fooddeliv
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -26,6 +27,7 @@ class ListCanteen : AppCompatActivity() {
 
         mrecyclerview = findViewById(R.id.recyclerview)
 
+        //get data from firebase foodList
         ref = FirebaseDatabase.getInstance().getReference().child("foodlist")
 
         mrecyclerview.layoutManager= LinearLayoutManager(this)
@@ -57,6 +59,14 @@ class ListCanteen : AppCompatActivity() {
                         holder.mtitle.setText(model.Name)
                         Picasso.get().load(model.Image).into(holder.mimage)
 
+                        //Click Event
+                        holder.itemView.setOnClickListener {
+                            val intent = Intent(this@ListCanteen, FoodCanteen::class.java)
+                            intent.putExtra("Firebase_Image",model.Image)
+                            intent.putExtra("Firebase_Title",model.Name)
+                            startActivity(intent)
+                        }
+
                     }
 
                 })
@@ -73,6 +83,7 @@ class ListCanteen : AppCompatActivity() {
 
     }
 
+    //show title and image
     class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
         var mtitle: TextView = itemView.findViewById<TextView>(R.id.Display_title)
