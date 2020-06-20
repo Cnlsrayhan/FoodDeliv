@@ -34,6 +34,8 @@ class ListCanteen : AppCompatActivity() {
 
         show_progress = findViewById(R.id.progress_bar)
 
+        
+
         val option = FirebaseRecyclerOptions.Builder<Model>()
             .setQuery(ref, Model::class.java)
             .build()

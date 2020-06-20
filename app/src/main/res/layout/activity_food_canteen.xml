@@ -11,7 +11,8 @@
     <ImageView
         android:id="@+id/imgView"
         android:layout_width="match_parent"
-        android:layout_height="220dp"/>
+        android:layout_height="220dp"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/txtView"
@@ -20,6 +21,12 @@
         android:textSize="18sp"
         android:layout_width="match_parent"
         android:layout_height="30dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 
 
 
