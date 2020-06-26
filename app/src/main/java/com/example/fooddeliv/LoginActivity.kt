@@ -38,7 +38,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener  {
                 if (validate(email, password)) {
                     mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                         if (it.isSuccessful){
-                            startActivity(Intent(this, ListCanteen::class.java))
+                            startActivity(Intent(this, MapsActivity::class.java))
                             finish()
 
                         } else {
