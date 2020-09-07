@@ -1,11 +1,10 @@
 package com.example.fooddeliv
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.AbsListView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -39,7 +38,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener  {
                 if (validate(email, password)) {
                     mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                         if (it.isSuccessful){
-                            startActivity(Intent(this, MainActivity::class.java))
+                            startActivity(Intent(this, MapsActivity::class.java))
                             finish()
 
                         } else {
